@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Timer Example</title>
+  <style>
+    .timer {
+      font-size: 24px;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="timer" id="timer">00:00:00</div>
+
+  <script>
+    // Set the starting time (in seconds)
+    let seconds = 0;
+    
+    // Update the timer every second
+    const timerInterval = setInterval(updateTimer, 1000);
+    
+    function updateTimer() {
+      // Increment the seconds
+      seconds++;
+      
+      // Calculate the hours, minutes, and remaining seconds
+      const hours = Math.floor(seconds / 3600);
+      const minutes = Math.floor((seconds % 3600) / 60);
+      const remainingSeconds = seconds % 60;
+      
+      // Format the time values with leading zeros
+      const formattedTime = `${padNumber(hours)}:${padNumber(minutes)}:${padNumber(remainingSeconds)}`;
+      
+      // Display the formatted time in the timer element
+      document.getElementById('timer').innerHTML = formattedTime;
+    }
+    
+    function padNumber(number) {
+      return number.toString().padStart(2, '0');
+    }
+  </script>
+</body>
+</html>
