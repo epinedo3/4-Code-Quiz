@@ -13,40 +13,35 @@
     </div> 
 
     <section id="home-screen">
-        <h1>Welcome to the quiz game</h1>
+        <h1>Welcome to the Quiz Game!</h1>
+        <p> Rules of the Game: You have 60 seconds to Answer 5 questions right. 
+            If you answer any questions wrong you will be deducted 10 seconds of your timer.
+            Game Ends when you have answered all 5 questions, or Time Left reaches 0.
+            You can play as many times as you like.
+            Highest Score will be saved.
+            Good Luck!
+        </p>
         <button id="start">Start</button>
-        
-    </section>
-    
-    <section id="quiz-screen" class="hide">
-        <h1 id="question">What is 1+1?</h1>
-        <ul>
-            <li id="choice-1" class="choice"></li>
-            <li id="choice-2" class="choice"></li>
-            <li id="choice-3" class="choice"></li>
-        </ul>
+        <nav class="navbar">
+            <ul>
+                <li><button id="play-again-button">Play Again</button></li>
+                <li><button id="high-scores-button">View High Scores</button></li>
+            </ul>
+        </nav> 
     </section>
 
     <section id="quiz-screen" class="hide">
-        <h1 id="question">What is 3*3?</h1>
-        <ul>
+        <h1 id="question"></h1>
+        <ul id="choiceList"></ul>
             <li id="choice-1" class="choice"></li>
             <li id="choice-2" class="choice"></li>
             <li id="choice-3" class="choice"></li>
-        </ul>
     </section>
+
+  
     
-    <section id="quiz-screen" class="hide">
-        <h1 id="question">What is 3*10?</h1>
-        <ul>
-            <li id="choice-1" class="choice"></li>
-            <li id="choice-2" class="choice"></li>
-            <li id="choice-3" class="choice"></li>
-        </ul>
-    </section>
-    
-    <button id="backButton" disabled>Back</button>
-    <button id="nextButton">Next</button>
+    <!-- <button id="backButton" disabled>Back</button>
+    <button id="nextButton">Next</button> -->
 
 
 
