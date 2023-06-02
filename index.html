@@ -22,7 +22,23 @@
             Good Luck!
         </p>
         <button id="start">Start</button>
-        <nav class="navbar">
+    </section>
+    
+    <section id="quiz-screen" class="hide">
+        <h1 id="question"></h1>
+        <ul id="choiceList">
+            <li id="choice-1" class="choice"></li>
+            <li id="choice-2" class="choice"></li>
+            <li id="choice-3" class="choice"></li>
+        </ul>
+    </section>
+    
+    <section class="game-over-section hide" > 
+        Game Over!
+        <input type="text" id="initials" placeholder="Type your name" />
+        <button id="namebutton">Add</button>
+        <ul id ="high-score"></ul>
+        <nav id="navbar" class="navbar hide">
             <ul>
                 <li><button id="play-again-button">Play Again</button></li>
                 <li><button id="high-scores-button">View High Scores</button></li>
@@ -30,21 +46,23 @@
         </nav> 
     </section>
 
-    <section id="quiz-screen" class="hide">
-        <h1 id="question"></h1>
-        <ul id="choiceList"></ul>
-            <li id="choice-1" class="choice"></li>
-            <li id="choice-2" class="choice"></li>
-            <li id="choice-3" class="choice"></li>
+    <section class="score-section hide">
+        <h2>Scores</h2>
+        <div id="scores"></div>
+        <label for="player-initials">Type in your Initials</label>
+        <input type="text" id="player-initials" name="player-initials">
+        <button id="submit-score-button">Submit Score</button>
     </section>
 
-  
+    <section id="high-scores-section">
+        <ul>
+            <li>High Scores</li>
+        </ul>
+    </section>
     
-    <!-- <button id="backButton" disabled>Back</button>
-    <button id="nextButton">Next</button> -->
-
-
-
+    
+    
+    
     <script src="./script/script.js"></script>
 </body>
 </html>

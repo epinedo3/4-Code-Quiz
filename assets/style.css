@@ -2,6 +2,10 @@
     display: none;
 }
 
-#home-screen{
-    align-items: center;
+#home-screen{ 
+    text-align: center;
+}
+
+.choice {
+    border: 1px solid black;
 }
